@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 school</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Добро пожаловать в зону отдыха!</h1>
+    <form action="/submit" method="POST">
+        <label for="username">Имя:</label>
+        <input type="text" id="username" name="username" placeholder="Введите имя" required>
+        <br><br>
+
+        <label for="surname">Фамилия:</label>
+        <input type="text" id="surname" name="surname" placeholder="Введите фамилию:" required>
+        <br><br>
+    
+        <label for="class">Класс:</label>
+        <input type="text" id="class" name="class" placeholder="Введите класс:" required>
+        <br><br>
+    
+        <label for="mess">Причина:</label>
+        <input type="text" id="mess" name="mess" placeholder="Причина нахождение в аудитории:" required>
+        <br><br>
+
+        <label for="dob">Дата рождения:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <label for="ad">Адрес:</label>
+        <input type="text" id="ad" name="ad" placeholder="Введите адрес:" required>
+        <br><br>
+
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>
